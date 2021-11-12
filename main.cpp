@@ -1,8 +1,7 @@
-#include "PetrolCar.hpp"
-#include "ElectricCar.hpp"
+
 #include "HybridCar.hpp"
 #include <iostream>
-
+//g++-10 ElectricCar.cpp ElectricEngine.cpp HybridCar.cpp PetrolCar.cpp PetrolEngine.cpp 
 int main()
 {
     std::cout << std::endl << "OPEL" << std::endl;
@@ -11,6 +10,7 @@ int main()
     opel.brake();
     opel.accelerate(-900);
     opel.refuel();
+
 
     std::cout << std::endl << "NISSAN" << std::endl;
     ElectricCar nissan(new ElectricEngine(130, 650));
@@ -24,5 +24,5 @@ int main()
     toyota.accelerate(100);
     toyota.brake();
     toyota.charge();
-    toyota.refuel();
+   // toyota.refuel();
 }

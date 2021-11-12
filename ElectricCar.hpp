@@ -1,14 +1,14 @@
 #include "ElectricEngine.hpp"
-
-class ElectricCar
+#include "Car.hpp"
+class ElectricCar : public virtual Car
 {
+
 public:
+    ElectricCar();
     ElectricCar(ElectricEngine* engine);
     ~ElectricCar();
-    void turnLeft();
-    void turnRight();
-    void brake();
-    void accelerate(int speed);
+
+
     void charge();
 
     ElectricEngine* engine_;

@@ -3,6 +3,7 @@
 class PetrolEngine
 {
 public:
+    PetrolEngine();
     PetrolEngine(int power, float capacity, int gears);
     void changeGear(int gear);
 
